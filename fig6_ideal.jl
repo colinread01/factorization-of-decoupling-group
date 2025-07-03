@@ -272,7 +272,7 @@ function Convert_MultiFloat(H::Operator)
     return DenseOperator(basis,ComplexDF64.(dense(H).data))
 end
 
-data_dir = "/home/colin/Documents/JULIA/Codes persos/Platonic_sequences/Multisymmetrization/Codes 4 GitHub/Data_fig4/"
+data_dir = "/home/colin/Documents/JULIA/Codes persos/Platonic_sequences/Multisymmetrization/Codes 4 GitHub/Data_fig6/"
 
 #################
 # Generate Data #
@@ -452,9 +452,9 @@ Legend(fig[1,2], legends_marker[1:4], [L"\text{NoDD}", L"\text{TEDDY}" , L"\text
 
 display(fig)
 
-save(data_dir*"fig_4 ideal.png", fig, px_per_unit=10.0)
+save(data_dir*"fig_6 ideal.png", fig, px_per_unit=10.0)
 cd(data_dir)
-fn = "fig_4 ideal"
+fn = "fig_6 ideal"
 run(`mogrify -trim $fn.png`)
 
 
@@ -492,7 +492,7 @@ Legend(fig[2,1], legends_marker[1:4], [L"\text{NoDD}", L"\text{TEDDY}" , L"\text
 
 display(fig)
 
-save(data_dir*"fig_4 ideal (2).png", fig, px_per_unit=10.0)
+save(data_dir*"fig_6 ideal (2).png", fig, px_per_unit=10.0)
 cd(data_dir)
-fn = "fig_4 ideal (2)"
+fn = "fig_6 ideal (2)"
 run(`mogrify -trim $fn.png`)
